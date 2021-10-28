@@ -10,13 +10,13 @@ I test the code with the following packages. Other versions may also work, but I
 ### pre-training
 At the pre-training stage, we first extract data pairs from query logs, as shown in `/datasample/***_pair.txt`. Then, we train the parameters with the contrastive learning framework by:
 ```
-python prepare_load.py
+python pretrain/prepare_load.py
 ```
 
 ### fine-tuning
 We initial the encoders with pre-trained parameters and train the ranking model by:
 ```
-python dataset_new.py
+python finetune/dataset_new.py
 ```
 
 ## Citations
